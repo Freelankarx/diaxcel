@@ -37,7 +37,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url('hero.jpg') center/cover no-repeat;
+  background: url('https://raw.githubusercontent.com/Freelankarx/diaxcel/main/images/hero.jpg') center/cover no-repeat;
   transform: scale(1.1);
   z-index: 1;
 }
