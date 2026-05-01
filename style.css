@@ -28,12 +28,14 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* Background Animation */
@@ -95,6 +97,7 @@ header {
     background: rgba(5, 11, 20, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
+    transition: var(--transition);
 }
 
 header nav {
@@ -108,14 +111,15 @@ header nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #fff;
     letter-spacing: 1px;
+    z-index: 1001;
 }
 
 .logo-img {
-    height: 40px;
+    height: 35px;
     width: auto;
     object-fit: contain;
 }
@@ -144,12 +148,27 @@ header nav {
     color: var(--primary);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: var(--transition);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 120px 0 80px;
+    padding: 120px 0 60px;
 }
 
 .hero-flex {
@@ -250,6 +269,7 @@ header nav {
     transition: var(--transition);
     cursor: pointer;
     border: none;
+    text-align: center;
 }
 
 .btn-primary {
@@ -260,7 +280,6 @@ header nav {
 .btn-outline {
     border: 2px solid #fff;
     color: #fff;
-    margin-left: 15px;
 }
 
 .btn-outline:hover {
@@ -338,24 +357,24 @@ header nav {
 
 /* Sections */
 .section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .section-header h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
 /* Problem Grid */
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .problem-card {
@@ -371,7 +390,7 @@ header nav {
 .solution-flex {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -419,8 +438,8 @@ header nav {
 /* Product Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .product-card {
@@ -430,7 +449,7 @@ header nav {
 
 .product-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -479,12 +498,12 @@ header nav {
 
 .why-card {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 .why-card .icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 /* Steps */
@@ -502,15 +521,15 @@ header nav {
 }
 
 .step-circle {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: var(--primary);
     color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     margin: 0 auto 20px;
     box-shadow: 0 0 20px var(--primary-glow);
@@ -520,7 +539,7 @@ header nav {
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 25px;
 }
 
 .testimonial-card p {
@@ -536,7 +555,7 @@ header nav {
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 25px;
 }
 
 /* Stats */
@@ -554,7 +573,7 @@ header nav {
 }
 
 .stat-num {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--primary);
 }
@@ -564,7 +583,7 @@ header nav {
     background: linear-gradient(135deg, rgba(255, 106, 0, 0.1), rgba(10, 37, 64, 0.2));
     backdrop-filter: blur(20px);
     border: 1px solid var(--primary);
-    padding: 80px;
+    padding: 60px 30px;
     border-radius: 30px;
     text-align: center;
 }
@@ -577,14 +596,14 @@ header nav {
 
 /* Footer */
 .footer {
-    padding: 80px 0 40px;
+    padding: 60px 0 30px;
     border-top: 1px solid var(--glass-border);
 }
 
 .footer-grid {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -605,10 +624,10 @@ header nav {
 /* WhatsApp Float */
 .wa-float {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
     background: #25D366;
     border-radius: 50%;
     display: flex;
@@ -620,19 +639,67 @@ header nav {
 }
 
 .wa-float img {
-    width: 35px;
+    width: 30px;
 }
 
 .wa-float:hover {
     transform: scale(1.1) rotate(10deg);
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive Fixes */
+@media (max-width: 992px) {
+    .hero h1 { font-size: 3rem; }
+    .why-grid { grid-template-columns: 1fr; text-align: center; }
+}
+
 @media (max-width: 768px) {
+    .menu-toggle { display: flex; }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: rgba(5, 11, 20, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    .hero { padding: 100px 0 40px; }
+    .hero-flex { flex-direction: column; text-align: center; }
     .hero h1 { font-size: 2.5rem; }
-    .section-header h2 { font-size: 2.2rem; }
-    .nav-links { display: none; }
-    .cta-glass { padding: 40px 20px; }
-    .why-grid { grid-template-columns: 1fr; }
+    .hero-btns { display: flex; flex-direction: column; gap: 15px; }
+    .btn-outline { margin-left: 0; }
+    
+    .section-header h2 { font-size: 2rem; }
     .why-cards { grid-template-columns: 1fr; }
+    .cta-glass { padding: 40px 20px; }
+    .cta-glass h2 { font-size: 1.8rem; }
+    
+    .footer-grid { flex-direction: column; text-align: center; }
+    .logo { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 2rem; }
+    .stat-num { font-size: 2.5rem; }
+    .logo-img { height: 30px; }
+    .logo { font-size: 1.2rem; }
 }
