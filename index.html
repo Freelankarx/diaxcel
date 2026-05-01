@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIAXCEL | Premium Solar Energy Solutions Nigeria</title>
-    <meta name="description" content="Experience 24/7 power with DIAXCEL. Premium solar solutions for Nigerian homes and businesses.">
+    <meta name="description" content="Experience 24/7 power with DIAXCEL. Premium solar solutions for Nigerian homes and businesses. Say goodbye to blackouts.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -20,11 +20,14 @@
     <!-- 1. HEADER & NAVIGATION -->
     <header id="header">
         <nav class="container">
-            <div class="logo">DIAXCEL<span>.</span></div>
+            <div class="logo">
+                <img src="logo.png" alt="DIAXCEL Logo" class="logo-img">
+                <span>DIAXCEL</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Products</a></li>
-                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#why-us">Why Us</a></li>
                 <li><a href="#contact" class="btn-small glow-btn">Get Quote</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
@@ -39,13 +42,22 @@
         <!-- 2. HERO SECTION -->
         <section id="home" class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-tag">Energy Freedom Starts Here</div>
-                    <h1 class="glow-text">Say Goodbye to Darkness. <br><span>Power Your Life</span> with DIAXCEL.</h1>
-                    <p>Premium solar systems engineered for the Nigerian climate. Reliable, silent, and cost-effective energy for your home and business.</p>
-                    <div class="hero-btns">
-                        <a href="https://wa.me/2349163118694?text=Hello%2C%20I%20want%20to%20switch%20to%20DIAXCEL%20Solar." class="btn btn-primary glow-btn">Chat on WhatsApp</a>
-                        <a href="#products" class="btn btn-outline">Explore Products</a>
+                <div class="hero-flex">
+                    <div class="hero-content">
+                        <div class="hero-tag">Energy Freedom Starts Here</div>
+                        <span class="badge">Trusted by 100+ Customers</span>
+                        <h1 class="glow-text">Stop Depending on NEPA. <br><span>Power Your Life</span> with DIAXCEL.</h1>
+                        <p>Reliable, affordable, and high-quality solar systems designed for Nigerian homes and businesses. Save money and enjoy constant electricity.</p>
+                        <div class="hero-btns">
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%20want%20to%20switch%20to%20DIAXCEL%20Solar." class="btn btn-primary glow-btn">Chat on WhatsApp</a>
+                            <a href="#products" class="btn btn-outline">View Products</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-container">
+                        <div class="hero-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1000&q=80" alt="Solar Panels" class="hero-main-img">
+                            <div class="hero-img-glow"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,31 +84,47 @@
             </div>
         </section>
 
-        <!-- 4. PROBLEM SECTION (DARK & EMOTIONAL) -->
+        <!-- 4. TRUST BAR (LOGOS/PARTNERS) -->
+        <section class="trust-bar">
+            <div class="container">
+                <p>WE PROVIDE SOLUTIONS FOR</p>
+                <div class="trust-icons">
+                    <span>🏠 Homes</span>
+                    <span>🏢 Offices</span>
+                    <span>🏪 Shops</span>
+                    <span>🏭 Factories</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROBLEM SECTION -->
         <section id="problem" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="glow-text">The Cost of Waiting</h2>
-                    <p>Every day without solar is a day spent in noise, heat, and wasted money.</p>
+                    <h2 class="glow-text">Tired of Constant Blackouts?</h2>
+                    <p>We understand the struggle of living in Nigeria with unstable power.</p>
                 </div>
                 <div class="problem-grid">
                     <div class="problem-card glass">
-                        <h3>Fuel Scarcity & Price</h3>
-                        <p>Stop queuing for petrol. Stop worrying about the rising cost of diesel.</p>
+                        <div class="icon">⚡</div>
+                        <h3>Unreliable Grid</h3>
+                        <p>Sudden power cuts that ruin your plans and damage your appliances.</p>
                     </div>
                     <div class="problem-card glass">
-                        <h3>Damaged Appliances</h3>
-                        <p>Grid fluctuations destroy expensive electronics. Solar provides stable, clean power.</p>
+                        <div class="icon">💸</div>
+                        <h3>High Fuel Costs</h3>
+                        <p>Spending thousands daily on petrol and diesel for noisy generators.</p>
                     </div>
                     <div class="problem-card glass">
-                        <h3>Business Losses</h3>
-                        <p>No light means no work. Don't let power outages kill your productivity.</p>
+                        <div class="icon">😫</div>
+                        <h3>Generator Stress</h3>
+                        <p>The noise, the smoke, and the constant maintenance headaches.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. SOLUTION SECTION (VISUAL) -->
+        <!-- 6. SOLUTION SECTION -->
         <section id="solution" class="section">
             <div class="container">
                 <div class="solution-flex">
@@ -105,219 +133,280 @@
                         <div class="image-glow"></div>
                     </div>
                     <div class="solution-info">
-                        <h2 class="glow-text">The DIAXCEL Advantage</h2>
-                        <p>We don't just sell panels; we provide a lifestyle upgrade. Our systems are designed to be "set and forget."</p>
-                        <div class="benefit-item">
-                            <div class="benefit-icon">☀️</div>
-                            <div>
-                                <h4>High Efficiency</h4>
-                                <p>Capture more energy even on cloudy days in Nigeria.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon">🔋</div>
-                            <div>
-                                <h4>Smart Storage</h4>
-                                <p>Advanced battery tech that lasts through the longest nights.</p>
-                            </div>
-                        </div>
+                        <h2 class="glow-text">DIAXCEL: Your Path to Energy Freedom</h2>
+                        <p>We provide clean, silent, and sustainable energy that works even when the grid fails. Our solar systems are built to last and optimized for the Nigerian climate.</p>
+                        <ul class="check-list">
+                            <li>Zero Noise, Zero Smoke</li>
+                            <li>Significant Savings on Bills</li>
+                            <li>Automatic Power Switching</li>
+                            <li>24/7 Customer Support</li>
+                        </ul>
+                        <a href="https://wa.me/2349163118694?text=I%20want%20to%20know%20more%20about%20DIAXCEL%20solar%20solutions." class="btn btn-primary glow-btn">Get Started Now</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. PRODUCTS SECTION (DETAILED) -->
+        <!-- 7. HOW IT WORKS -->
+        <section id="how" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="glow-text">Simple 3-Step Process</h2>
+                </div>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-circle">1</div>
+                        <h3>Consultation</h3>
+                        <p>Chat with us on WhatsApp to discuss your power needs.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-circle">2</div>
+                        <h3>Custom Design</h3>
+                        <p>We recommend the best solar kit for your budget and home.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-circle">3</div>
+                        <h3>Installation</h3>
+                        <p>Our experts install and you enjoy 24/7 electricity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. PRODUCTS SECTION -->
         <section id="products" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="glow-text">Our Premium Catalog</h2>
-                    <p>Select the perfect solution for your energy needs.</p>
+                    <h2 class="glow-text">Our Solar Products</h2>
+                    <p>High-quality components with warranty.</p>
                 </div>
                 <div class="product-grid">
                     <!-- Product 1 -->
                     <div class="product-card glass">
                         <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=500&q=80" alt="Solar Inverter">
                         <div class="p-content">
-                            <h3>Hybrid Inverters</h3>
-                            <p>Smart switching between solar, battery, and grid.</p>
+                            <h3>Solar Inverter</h3>
+                            <p>Pure sine wave inverters for stable power supply.</p>
                             <span class="price">From ₦150,000</span>
-                            <a href="https://wa.me/2349163118694?text=I%20want%20to%20order%20a%20Solar%20Inverter." class="btn-wa">Order on WhatsApp</a>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Inverter.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
                         </div>
                     </div>
                     <!-- Product 2 -->
                     <div class="product-card glass">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=500&q=80" alt="Solar Panels">
+                        <img src="https://images.unsplash.com/photo-1618941716939-553f36609460?auto=format&fit=crop&w=500&q=80" alt="Solar Fan">
                         <div class="p-content">
-                            <h3>Mono Panels</h3>
-                            <p>Tier-1 high-efficiency monocrystalline panels.</p>
-                            <span class="price">From ₦45,000</span>
-                            <a href="https://wa.me/2349163118694?text=I%20want%20to%20order%20Solar%20Panels." class="btn-wa">Order on WhatsApp</a>
+                            <h3>Solar Fan</h3>
+                            <p>Stay cool all day and night without grid power.</p>
+                            <span class="price">From ₦35,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Fan.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
                         </div>
                     </div>
                     <!-- Product 3 -->
                     <div class="product-card glass">
-                        <img src="https://images.unsplash.com/photo-1548333341-97d4560fd40a?auto=format&fit=crop&w=500&q=80" alt="Solar Battery">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=500&q=80" alt="Solar TV">
                         <div class="p-content">
-                            <h3>Lithium Batteries</h3>
-                            <p>Long-lasting storage with 10+ years lifespan.</p>
-                            <span class="price">From ₦350,000</span>
-                            <a href="https://wa.me/2349163118694?text=I%20want%20to%20order%20Solar%20Batteries." class="btn-wa">Order on WhatsApp</a>
+                            <h3>Solar TV</h3>
+                            <p>Energy-efficient DC TVs for your entertainment.</p>
+                            <span class="price">From ₦85,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20TV.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
                         </div>
                     </div>
                     <!-- Product 4 -->
                     <div class="product-card glass">
-                        <img src="https://images.unsplash.com/photo-1618941716939-553f36609460?auto=format&fit=crop&w=500&q=80" alt="Solar Fan">
+                        <img src="https://images.unsplash.com/photo-1548333341-97d4560fold40a?auto=format&fit=crop&w=500&q=80" alt="Solar Battery">
                         <div class="p-content">
-                            <h3>Solar Fans</h3>
-                            <p>Stay cool 24/7 without grid dependency.</p>
-                            <span class="price">From ₦35,000</span>
-                            <a href="https://wa.me/2349163118694?text=I%20want%20to%20order%20a%20Solar%20Fan." class="btn-wa">Order on WhatsApp</a>
+                            <h3>Solar Battery</h3>
+                            <p>Deep cycle batteries with long lifespan.</p>
+                            <span class="price">From ₦120,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Battery.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card glass">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=500&q=80" alt="Solar Panels">
+                        <div class="p-content">
+                            <h3>Solar Panels</h3>
+                            <p>High-efficiency monocrystalline panels.</p>
+                            <span class="price">From ₦45,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Panels.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card glass">
+                        <img src="https://images.unsplash.com/photo-1542332213-31f87348057f?auto=format&fit=crop&w=500&q=80" alt="Solar Street Lights">
+                        <div class="p-content">
+                            <h3>Solar Street Lights</h3>
+                            <p>Brighten your compound automatically at night.</p>
+                            <span class="price">From ₦25,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Street%20Lights.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="product-card glass">
+                        <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=500&q=80" alt="Solar Generator Kits">
+                        <div class="p-content">
+                            <h3>Solar Generator Kits</h3>
+                            <p>All-in-one portable power for small homes.</p>
+                            <span class="price">From ₦250,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Generator%20Kits.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="product-card glass">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80" alt="Solar Freezer">
+                        <div class="p-content">
+                            <h3>Solar Freezer</h3>
+                            <p>Keep your food fresh without worrying about light.</p>
+                            <span class="price">From ₦180,000</span>
+                            <a href="https://wa.me/2349163118694?text=Hello%2C%20I%27m%20interested%20in%20Solar%20Freezer.%20Please%20send%20details." class="btn-wa">Order via WhatsApp</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 7. WHY CHOOSE US (GLOWING) -->
+        <!-- 9. WHY CHOOSE US -->
         <section id="why-us" class="section">
             <div class="container">
                 <div class="why-grid">
                     <div class="why-text">
-                        <h2 class="glow-text">Why Nigerians Trust DIAXCEL</h2>
+                        <h2 class="glow-text">Why Choose DIAXCEL?</h2>
                         <p>We are more than a solar company; we are your partners in energy independence.</p>
                     </div>
                     <div class="why-cards">
                         <div class="why-card glass">
+                            <div class="icon">🚚</div>
                             <h4>Fast Delivery</h4>
-                            <p>Nationwide shipping within 72 hours.</p>
+                            <p>We deliver across Nigeria within 3-5 working days.</p>
                         </div>
                         <div class="why-card glass">
-                            <h4>Expert Support</h4>
-                            <p>24/7 technical assistance for all clients.</p>
+                            <div class="icon">🛠️</div>
+                            <h4>Expert Installation</h4>
+                            <p>Our certified technicians ensure your system is set up perfectly.</p>
+                        </div>
+                        <div class="why-card glass">
+                            <div class="icon">💰</div>
+                            <h4>Affordable Pricing</h4>
+                            <p>Best value for money with flexible payment options available.</p>
+                        </div>
+                        <div class="why-card glass">
+                            <div class="icon">⭐</div>
+                            <h4>Trusted Service</h4>
+                            <p>Over 100+ satisfied customers across Nigeria.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 8. HOW IT WORKS (STEP BY STEP) -->
-        <section id="how" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="glow-text">Your Journey to Light</h2>
-                </div>
-                <div class="steps-container">
-                    <div class="step-item">
-                        <div class="step-circle">1</div>
-                        <h3>Consult</h3>
-                        <p>Tell us your power needs on WhatsApp.</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-circle">2</div>
-                        <h3>Design</h3>
-                        <p>We create a custom solar plan for you.</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-circle">3</div>
-                        <h3>Install</h3>
-                        <p>Our pros set up your system in 1 day.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 9. TESTIMONIALS (REALISTIC) -->
+        <!-- 10. TESTIMONIALS -->
         <section id="testimonials" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="glow-text">Voices of Freedom</h2>
+                    <h2 class="glow-text">What Our Customers Say</h2>
                 </div>
-                <div class="testimonial-slider">
+                <div class="testimonial-grid">
                     <div class="testimonial-card glass">
-                        <p>"DIAXCEL changed my business. I no longer spend 5k daily on fuel. My freezer stays cold 24/7."</p>
-                        <div class="author">- Mrs. Ngozi, Lagos</div>
+                        <p>"Since I installed DIAXCEL solar, I've forgotten what NEPA looks like. My kids can study at night without noise."</p>
+                        <div class="author"><strong>Mr. Emeka, Lagos</strong></div>
                     </div>
                     <div class="testimonial-card glass">
-                        <p>"The installation was professional and neat. The lithium battery is a beast! Highly recommended."</p>
-                        <div class="author">- Mr. Ibrahim, Abuja</div>
+                        <p>"The solar fan is a lifesaver! It works all day and night. Best investment I've made this year."</p>
+                        <div class="author"><strong>Mrs. Aisha, Abuja</strong></div>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <p>"Professional installation and great customer service. They explained everything clearly. Highly recommended!"</p>
+                        <div class="author"><strong>Engr. Tunde, Port Harcourt</strong></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 10. FAQ (INTERACTIVE) -->
+        <!-- 11. FAQ SECTION -->
         <section id="faq" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="glow-text">Common Questions</h2>
+                    <h2 class="glow-text">Frequently Asked Questions</h2>
                 </div>
                 <div class="faq-grid">
                     <div class="faq-item glass">
-                        <h4>Does it work when it rains?</h4>
-                        <p>Yes! Our panels are designed to capture diffused light even during the rainy season.</p>
+                        <h4>Do you offer warranty?</h4>
+                        <p>Yes, all our products come with a minimum of 1-year warranty.</p>
                     </div>
                     <div class="faq-item glass">
-                        <h4>Can I pay in installments?</h4>
-                        <p>We have flexible payment plans for verified customers. Chat with us to learn more.</p>
+                        <h4>Can I power my AC with solar?</h4>
+                        <p>Yes, we have high-capacity systems that can power ACs and other heavy appliances.</p>
+                    </div>
+                    <div class="faq-item glass">
+                        <h4>Do you install outside Lagos?</h4>
+                        <p>Yes, we have installation teams available nationwide across Nigeria.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 11. STATS SECTION -->
+        <!-- 12. STATS SECTION -->
         <section class="stats-section">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-box">
-                        <div class="stat-num">500+</div>
-                        <p>Panels Installed</p>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-num">100%</div>
-                        <p>Uptime Guaranteed</p>
+                        <div class="stat-num">100+</div>
+                        <p>Installations</p>
                     </div>
                     <div class="stat-box">
                         <div class="stat-num">24/7</div>
-                        <p>Power Supply</p>
+                        <p>Support</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">36+</div>
+                        <p>States Covered</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">100%</div>
+                        <p>Satisfaction</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 12. FINAL CTA (URGENCY) -->
+        <!-- 13. FINAL CTA SECTION -->
         <section class="final-cta section">
             <div class="container">
                 <div class="cta-glass">
-                    <h2 class="glow-text">Ready to Own the Sun?</h2>
-                    <p>Join the energy revolution today. Limited stock available for this month's installation batch.</p>
-                    <a href="https://wa.me/2349163118694?text=I%20am%20ready%20to%20install%20solar.%20Send%20me%20a%20quote." class="btn btn-primary glow-btn">Get My Free Quote</a>
+                    <h2 class="glow-text">Ready to Switch to Solar?</h2>
+                    <p>Don't wait for the next blackout. Join hundreds of Nigerians enjoying constant power today.</p>
+                    <p class="urgency">⚠️ Limited stock available. Order now before prices increase!</p>
+                    <a href="https://wa.me/2349163118694?text=I%20am%20ready%20to%20switch%20to%20solar.%20Please%20contact%20me." class="btn btn-primary glow-btn btn-large">Chat on WhatsApp Now</a>
                 </div>
             </div>
         </section>
-
-        <!-- 13. FOOTER -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-brand">
-                        <div class="logo">DIAXCEL<span>.</span></div>
-                        <p>Lighting up Nigeria, one home at a time.</p>
-                    </div>
-                    <div class="footer-contact">
-                        <h4>Contact</h4>
-                        <p>+234 916 311 8694</p>
-                        <p>Lagos, Nigeria</p>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 DIAXCEL Solar. All Rights Reserved.</p>
-                    <p class="designer-credit">Design by <a href="https://Freelankarx.github.io/freelankarx" target="_blank">Freelankarx</a></p>
-                </div>
-            </div>
-        </footer>
     </main>
 
-    <!-- Floating WhatsApp -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                <img src="logo.png" alt="DIAXCEL Logo" class="logo-img">
+                <span>DIAXCEL</span>
+            </div>
+                    <p>Providing reliable solar energy solutions across Nigeria.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📞 +234 916 311 8694</p>
+                    <p>Lagos, Nigeria</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DIAXCEL Solar. All Rights Reserved.</p>
+                <p class="designer-credit">Design by <a href="https://Freelankarx.github.io/freelankarx" target="_blank">Freelankarx</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/2349163118694" class="wa-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
